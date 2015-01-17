@@ -17,14 +17,11 @@ app.use(bodyParser.urlencoded({
 
 
 app.post('/hook',function(req, resp) {
-  console.log('HOOKED', req);
+  console.log('-------HOOKED------');
+  return 'Issue hook received.'
 });
 
 
-
-app.get('/hook',function(req, resp) {
-  console.log('HOOKED GET', req);
-});
 
 
 
