@@ -8,9 +8,8 @@ var
   app = express();
 
 // integrations
-//broken on master!:
-//webhook = require('./integrations/gitup-webhook')(config);
-//twitter = require('./integrations/gitup-twitter')(config);
+webhook = require('./integrations/gitup-webhook')(config);
+twitter = require('./integrations/gitup-twitter')(config);
 
 app.set('port', process.env.PORT || 3000);
 app.use(logger('dev'));
